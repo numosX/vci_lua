@@ -4,8 +4,8 @@
 
 ## Get Started
 * 例えば、10 s 毎に処理を行いたい場合
-* 1 s オンになって、9 s オフになる、周期 10s の信号を作る
-* オンになる瞬間をトリガーとして処理を実行する
+  * 1 s オンになって、9 s オフになる、周期 10s のクロック信号を作る
+  * オンになる瞬間をトリガーとして処理を実行する
 ```lua
 Clock = require("clock")
 clock = Clock:new()
@@ -22,7 +22,7 @@ end
 
 * 上記実装では最初の 0 s 付近もトリガーされる
 * 最初の 0 s 付近で実行されたくない場合は下記の様に実装する
-  * 9 s オフになって、1 s オンになる、周期 10s の信号を作る
+  * 9 s オフになって、1 s オンになる、周期 10s のクロック信号を作る
   * ```オフ```になる瞬間をトリガーとして処理を実行する
 ```lua
 Clock = require("clock")
@@ -48,9 +48,9 @@ clock:is_falling() -- オフになった瞬間 true を返す
 * パラメタ設定用
 ```lua
 clock:set_threshold(number) -- オンオフの切り替えを判断する縦軸の値の閾値
-clock:set_high_time(number) -- pulse clock 用 オンになる時間(s)
-clock:set_low_time(number)  -- pulse clock 用 オフになる時間(s)
-clock:set_frequency(number) -- saw clock 用 周期(Hz)
+clock:set_high_time(number) -- pulse clock 用 オンになる時間を設定(s)
+clock:set_low_time(number)  -- pulse clock 用 オフになる時間を設定(s)
+clock:set_frequency(number) -- saw clock 用 周波数を設定(Hz)
 ```
 
 ## Implemented Clocks
