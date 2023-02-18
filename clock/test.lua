@@ -6,9 +6,6 @@ clock:select_clock("pulse")
 clock:set_high_time(1.2)
 clock:set_low_time(2.8)
 
--- clock:select_clock("saw")
--- clock:set_frequency(0.1)
-
 -- test functions
 
 function sleep(s)
