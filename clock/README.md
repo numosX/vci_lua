@@ -14,9 +14,9 @@ clock:set_low_time(9)
 
 while(true)
 do
-	if clock:is_rising() then
-		print(os.clock() .. " rising")
-	end
+    if clock:is_rising() then
+        print(os.clock() .. " rising")
+    end
 end
 ```
 
@@ -33,9 +33,9 @@ clock:set_high_time(1)
 
 while(true)
 do
-	if clock:is_falling() then
-		print(os.clock() .. " falling")
-	end
+    if clock:is_falling() then
+        print(os.clock() .. " falling")
+    end
 end
 ```
 
