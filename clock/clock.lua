@@ -78,8 +78,8 @@ end
 
 local member_functions = {
     get_clock       = get_clock,
-	is_rising       = is_rising,
-	is_falling      = is_falling,
+    is_rising       = is_rising,
+    is_falling      = is_falling,
     set_threshold   = set_threshold,
     set_high_time   = set_high_time,
     set_low_time    = set_low_time,
@@ -89,19 +89,19 @@ local member_functions = {
 }
 
 local new = function()
-	local self = {}
-	local member_params = {
-		_t0         = 0,
+    local self = {}
+    local member_params = {
+        _t0         = 0,
         _threshold  = 0.5,
         _frequency  = 1,
         _high_time  = 0.5,
         _low_time   = 0.5,
-	}
-	setmetatable(self, {__index = member_params})
-	setmetatable(member_params, {__index = member_functions})
-	return self
+    }
+    setmetatable(self, {__index = member_params})
+    setmetatable(member_params, {__index = member_functions})
+    return self
 end
 
 return {
-	new = new
+    new = new
 }
