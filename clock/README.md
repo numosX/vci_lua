@@ -20,25 +20,6 @@ do
 end
 ```
 
-* 上記実装では最初の 0 s 付近もトリガーされる
-* 最初の 0 s 付近で実行されたくない場合は下記の様に実装する
-  * 9 s オフになって、1 s オンになる、周期 10 s のクロック信号を作る
-  * ```オフ```になる瞬間をトリガーとして処理を実行する
-```lua
-Clock = require("clock")
-clock = Clock:new()
-clock:select_clock("pulse_low_start")
-clock:set_low_time(9)
-clock:set_high_time(1)
-
-while(true)
-do
-    if clock:is_falling() then
-        print(os.clock() .. " falling")
-    end
-end
-```
-
 ## Methods
 * 制御用
 ```lua
@@ -84,4 +65,40 @@ clock:set_threshold(0.5)
 clock:select_clock("saw")
 clock:set_frequency(10)
 clock:set_threshold(0.5)
+```
+
+## More Examples
+
+* 最初の 0 s 付近で実行されたくない場合は下記の様に実装する
+  * 9 s オフになって、1 s オンになる、周期 10 s のクロック信号を作る
+  * ```オフ```になる瞬間をトリガーとして処理を実行する
+```lua
+Clock = require("clock")
+clock = Clock:new()
+clock:select_clock("pulse_low_start")
+clock:set_low_time(9)
+clock:set_high_time(1)
+
+while(true)
+do
+    if clock:is_falling() then
+        print(os.clock() .. " falling")
+    end
+end
+```
+
+* 周期ではなく周波数で指定する時の方が楽な場合もある
+* saw クロックを使うと指定が楽
+```lua
+Clock = require("clock")
+clock = Clock:new()
+clock:select_clock("saw")
+clock:set_frequency(165/60) -- 165 bpm
+
+while(true)
+do
+    if clock:is_falling() then
+        print(os.clock() .. " falling")
+    end
+end
 ```
