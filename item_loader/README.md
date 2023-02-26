@@ -14,14 +14,14 @@ my_item_loader:add("item", 100) -- item0 から item99 を内部のテーブル�
 
 function onUse(used_obj)
     obj = my_item_loader:get() -- 登録したテーブルから item が１つ取得される
-	do_something(obj)
+    do_something(obj)
 end
 
 function do_something(obj)
     -- 例えばエフェクトを再生させる場合
-	local effect	= vci.assets.GetEffekseerEmitter(obj.GetName())
-	effect._ALL_Stop()
-	effect._ALL_Play()
+    local effect	= vci.assets.GetEffekseerEmitter(obj.GetName())
+    effect._ALL_Stop()
+    effect._ALL_Play()
 end
 
 ```

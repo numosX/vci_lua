@@ -19,8 +19,8 @@ local ballet = vci.assets.GetTransform("bullet")
 shooter:set_ballet(ballet)
 
 function onUse(used_gun)
-	-- 発射
-	shooter:shot()
+    -- 発射
+    shooter:shot()
 end
 ```
 
