@@ -1,5 +1,8 @@
 # VCI Utils
 * Lua scripts for Virtual Cast
 
-## Clock
-* sleep 使って処理を止めたくないので作りました。
+|:class:|:memo:|
+|-------|--------------------------------------------------|
+| clock         | sleep 使って処理を止めたくない人向けのクラス |
+| item_loader   | 連番で名前が付いたVCIの管理用クラス         |
+| shooter       | ガンのサンプルクラス                       |
