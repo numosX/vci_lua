@@ -35,13 +35,18 @@ plane_obj.SetRotation(q_plane_1)
     * ベクトル部 $\mathbf{q} = q_1 \mathbf{i} + q_1 \mathbf{j} + q_1 \mathbf{k}$
 ##  逆Quarternion（Inverse）
   * ノルムが1となるように定義することで、逆方向の回転は共役をとるだけとなる。
-  * $\tilde{q}^{-1} = \tilde{q}^* / ||\tilde{q}|| = \tilde{q}^*$
+  * $\tilde{q}^{-1} = \tilde{q}^* / ||\tilde{q}|| = \tilde{q}^{\ast}$
 ## 共役
   * ベクトル部の係数の符号を反転する。
-  * $\tilde{q}^* = q_0 - \mathbf{q}$
+  * $\tilde{q}^{\ast} = q_0 - \mathbf{q}$
 ## 積の共役
   * 積の共役のとりかたは、並べ替えて、全部に共役をとる。
-
+$$\begin{aligned}
+  (\tilde{q}\otimes\tilde{p})^* &= [(q_0 + \mathbf{q})\otimes(p_0 + \mathbf{p})]^* \notag \\
+  &= (p_0 + \mathbf{p})^*\otimes(q_0 + \mathbf{q})^* \notag \\
+  &= (p_0 - \mathbf{p})\otimes(q_0 - \mathbf{q}) \notag \\
+  &= \tilde{p}^*\otimes\tilde{q}^* \notag 
+\end{aligned}$$
 ## 作用のさせ方
   * ベクトル $v$ に対しては、$ \tilde{q} \otimes v \otimes \tilde{q}^* $
   * Quaternion $\tilde{p}$ に対しては $\tilde{q} \otimes \tilde{p}$
