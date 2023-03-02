@@ -61,7 +61,7 @@ $$
   \end{align}
 $$
 
-* Unity ではベクトル $ v $ 、クォータニオン $ \tilde{p} $ いずれに対してもクォータニオン $\tilde{q}$ を左からかけるだけでよい。
+* Unity では、いずれに対してもクォータニオン $\tilde{q}$ を左からかけるだけでよい。
 ```lua
 local q   = Quaternion.identity
 local p0  = Quaternion.identity
