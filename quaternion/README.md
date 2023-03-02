@@ -44,10 +44,10 @@ plane_obj.SetRotation(q_plane_1)
 
 $$
 \begin{align}
-  (\tilde{q}\otimes\tilde{p})^{\ast} &= [(q_0 + \mathbf{q})\otimes(p_0 + \mathbf{p})]^{\ast}  \\
-  &= (p_0 + \mathbf{p})^*\otimes(q_0 + \mathbf{q})^{\ast}  \\
-  &= (p_0 - \mathbf{p})\otimes(q_0 - \mathbf{q})  \\
-  &= \tilde{p}^*\otimes\tilde{q}^{\ast}  
+  (\tilde{q}\otimes\tilde{p})^{\ast} &= [(q_0 + \mathbf{q}) \otimes (p_0 + \mathbf{p})]^{\ast} \notag \\
+  &= (p_0 + \mathbf{p})^{\ast} \otimes (q_0 + \mathbf{q})^{\ast} \notag \\
+  &= (p_0 - \mathbf{p}) \otimes (q_0 - \mathbf{q}) \notag \\
+  &= \tilde{p}^{\ast} \otimes\ tilde{q}^{\ast} \notag 
 \end{align}
 $$
 
