@@ -30,9 +30,9 @@ plane_obj.SetRotation(q_plane_1)
 ## Quaternion
   * ある方向を基準とする回転量があり、Quaternion $\tilde{q}$ で表現できる。
   * Quaternion はスカラー部とベクトル部を分けて表記すると考えやすい。
-  * $\tilde{q} = q_0 + \bold{q}$ と表現する
+  * $\tilde{q} = q_0 + \mathbf{q}$ と表現する
     * スカラー部 $q_0$
-    * ベクトル部 $\bold{q} = q_1 \bold{i} + q_1 \bold{j} + q_1 \bold{k}$
+    * ベクトル部 $\mathbf{q} = q_1 \mathbf{i} + q_1 \mathbf{j} + q_1 \mathbf{k}$
 ##  逆Quarternion（Inverse）
   * ノルムが1となるように定義することで、逆方向の回転は共役をとるだけとなる。
   * $\tilde{q}^{-1} = \tilde{q}^{*} / ||\tilde{q}|| = \tilde{q}^{*}$
@@ -43,9 +43,9 @@ plane_obj.SetRotation(q_plane_1)
   * 積の共役のとりかたは、並べ替えて、全部に共役をとる。
 $
 \begin{align}
-  (\tilde{q}\otimes\tilde{p})^{*} &= [(q_0 + \bold{q})\otimes(p_0 + \bold{p})]^{*} \notag \\
-  &= (p_0 + \bold{p})^{*}\otimes(q_0 + \bold{q})^{*} \notag \\
-  &= (p_0 - \bold{p})\otimes(q_0 - \bold{q}) \notag \\
+  (\tilde{q}\otimes\tilde{p})^{*} &= [(q_0 + \mathbf{q})\otimes(p_0 + \mathbf{p})]^{*} \notag \\
+  &= (p_0 + \mathbf{p})^{*}\otimes(q_0 + \mathbf{q})^{*} \notag \\
+  &= (p_0 - \mathbf{p})\otimes(q_0 - \mathbf{q}) \notag \\
   &= \tilde{p}^{*}\otimes\tilde{q}^{*} \notag 
 \end{align}
 $
