@@ -52,8 +52,15 @@ $$
 $$
 
 ## 作用のさせ方
-  * ベクトル $v$ に対しては、$\tilde{q} \otimes v \otimes \tilde{q}^{\ast} $
-  * Quaternion $\tilde{p}$ に対しては $\tilde{q} \otimes \tilde{p}$
+  * ベクトル $v$ に対する作用のさせ方と、Quaternion $\tilde{p}$ に対しする作用のさせ方が異なる。
+
+$$
+\begin{align}
+  v'&=\tilde{q} \otimes v \otimes \tilde{q}^{\ast}  \\
+  q'&=\tilde{q} \otimes \tilde{p}
+  \end{align}
+$$
+
 ## 回転量の差
 * 回転の基準となる方向を$r_0$、回転前の箱の向きを $r_1$、回転後の箱の向きを $r_2$ とする。
 * 基準の方向から各方向に向かせるためのクォータニオンをそれぞれ $\tilde{q}_1$、$\tilde{q}_2$ とする。
