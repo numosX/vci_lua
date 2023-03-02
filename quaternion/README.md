@@ -43,12 +43,12 @@ plane_obj.SetRotation(q_plane_1)
   * 積の共役のとりかたは、並べ替えて、全部に共役をとる。
 
 $$
-\begin{aligned}
+\begin{align}
   (\tilde{q}\otimes\tilde{p})^* &= [(q_0 + \mathbf{q})\otimes(p_0 + \mathbf{p})]^* \notag \\
   &= (p_0 + \mathbf{p})^*\otimes(q_0 + \mathbf{q})^* \notag \\
   &= (p_0 - \mathbf{p})\otimes(q_0 - \mathbf{q}) \notag \\
   &= \tilde{p}^*\otimes\tilde{q}^* \notag 
-\end{aligned}
+\end{align}
 $$
 
 ## 作用のさせ方
