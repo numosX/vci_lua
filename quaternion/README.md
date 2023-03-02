@@ -35,7 +35,7 @@ plane_obj.SetRotation(q_plane_1)
     * ベクトル部 $\mathbf{q} = q_1 \mathbf{i} + q_1 \mathbf{j} + q_1 \mathbf{k}$
 ##  逆Quarternion（Inverse）
   * ノルムが1となるように定義することで、逆方向の回転は共役をとるだけとなる。
-  * $\tilde{q}^{-1} = \tilde{q}^{*} / ||\tilde{q}|| = \tilde{q}^{*}$
+  * $\tilde{q}^{-1} = \tilde{q}^{*} / \|\tilde{q}\| = \tilde{q}^{*}$
 ## 共役
   * ベクトル部の係数の符号を反転する。
   * $\tilde{q}^* = q_0 - \mathbf{q}$
