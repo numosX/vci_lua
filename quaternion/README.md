@@ -57,25 +57,31 @@ $$
 ## 回転量の差
 * 回転の基準となる方向が$r_0$であり、回転前の箱の向きを $r_1$、回転後の箱の向きを $r_2$ とする。
 * 基準の方向から各方向に向かせるためのクォータニオンをそれぞれ $\tilde{q}_1$、$\tilde{q}_2$ とする。
+
 $$
 \begin{aligned}
   r_1 = \tilde{q_1} \otimes r_0 \otimes \tilde{q_1}^* \notag\\
   r_2 = \tilde{q_2} \otimes r_0 \otimes \tilde{q_2}^* \notag\\
 \end{aligned}
 $$
+
 * $r_1$から$r_2$に回転させるクォータニオン $dq$ は $\tilde{q}_2\otimes \tilde{q}_1^*$ となる。
 * (1) より、左から $\tilde{q_1}^{-1}$をかけて、右から $\tilde{q_1}$ を書けると
+
 $$
 \begin{aligned}
   \tilde{q_1}^* \otimes r_1 \otimes \tilde{q_1} =  r_0 \notag \\
 \end{aligned}
 $$
+
 * (2) に代入して $r_0$ を消去すると
+
 $$
 \begin{aligned}
   r_2 = \tilde{q_2} \otimes \tilde{q_1}^* \otimes r_1 \otimes \tilde{q_1} \otimes \tilde{q_2}^* \notag
 \end{aligned}
 $$
+
 * つまり、$r_1$から$r_2$に向かせるためのクォータニオンは $\tilde{q_2} \otimes \tilde{q_1}^*$ となる。
 
 ## プログラミング上での実装方法
