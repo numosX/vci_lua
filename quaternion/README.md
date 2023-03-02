@@ -65,7 +65,7 @@ $$
 \end{aligned}
 $$
 
-* $ r_1 $から$ r_2 $に回転させるクォータニオン $dq$ は $\tilde{q}_2\otimes \tilde{q}_1^*$ となる。
+* $ r_1 $ から $ r_2 $ に回転させるクォータニオン $ dq $ は $\tilde{q}_2\otimes \tilde{q}_1^*$ となる。
 * (1) より、左から $\tilde{q_1}^{-1}$をかけて、右から $\tilde{q_1}$ を書けると
 
 $$
@@ -82,10 +82,10 @@ $$
 \end{aligned}
 $$
 
-* つまり、$r_1$から$r_2$に向かせるためのクォータニオンは $\tilde{q_2} \otimes \tilde{q_1}^*$ となる。
+* つまり、 $ r_1 $ から $ r_2 $ に向かせるためのクォータニオンは $\tilde{q_2} \otimes \tilde{q_1}^*$ となる。
 
 ## プログラミング上での実装方法
-* Unity ではベクトル$v$、クォータニオン$\tilde{p}$ いずれに対してもクォータニオン $\tilde{q}$ を左からかけるだけでよい。
+* Unity ではベクトル $ v $ 、クォータニオン $ \tilde{p} $ いずれに対してもクォータニオン $\tilde{q}$ を左からかけるだけでよい。
 ```lua
 local q   = Quaternion.identity
 local p0  = Quaternion.identity
