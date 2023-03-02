@@ -43,38 +43,38 @@ plane_obj.SetRotation(q_plane_1)
   * 積の共役のとりかたは、並べ替えて、全部に共役をとる。
 $
 \begin{align}
-  (\tilde{q}\otimes\tilde{p})^{*} &= [(q_0 + \mathbf{q})\otimes(p_0 + \mathbf{p})]^{*} \notag \\
-  &= (p_0 + \mathbf{p})^{*}\otimes(q_0 + \mathbf{q})^{*} \notag \\
+  (\tilde{q}\otimes\tilde{p})^{\ast} &= [(q_0 + \mathbf{q})\otimes(p_0 + \mathbf{p})]^{\ast} \notag \\
+  &= (p_0 + \mathbf{p})^{\ast}\otimes(q_0 + \mathbf{q})^{\ast} \notag \\
   &= (p_0 - \mathbf{p})\otimes(q_0 - \mathbf{q}) \notag \\
-  &= \tilde{p}^{*}\otimes\tilde{q}^{*} \notag 
+  &= \tilde{p}^{\ast}\otimes\tilde{q}^{\ast} \notag 
 \end{align}
 $
 ## 作用のさせ方
-  * ベクトル $v$ に対しては、$\tilde{q} \otimes v \otimes \tilde {q}^{*}$
+  * ベクトル $v$ に対しては、$\tilde{q} \otimes v \otimes \tilde {q}^{\ast}$
   * Quaternion $\tilde{p}$ に対しては $\tilde{q} \otimes \tilde{p}$
 ## 回転量の差
 * 回転の基準となる方向が$r_0$であり、回転前の箱の向きを $r_1$、回転後の箱の向きを $r_2$ とする。
 * 基準の方向から各方向に向かせるためのクォータニオンをそれぞれ $\tilde{q}_1$、$\tilde{q}_2$ とする。
 $
 \begin{align}
-  r_1 = \tilde{q_1} \otimes r_0 \otimes \tilde{q_1}^{*} \\
-  r_2 = \tilde{q_2} \otimes r_0 \otimes \tilde{q_2}^{*} \\
+  r_1 = \tilde{q_1} \otimes r_0 \otimes \tilde{q_1}^{\ast} \\
+  r_2 = \tilde{q_2} \otimes r_0 \otimes \tilde{q_2}^{\ast} \\
 \end{align}
 $
-* $r_1$から$r_2$に回転させるクォータニオン $dq$ は $\tilde{q}_2\otimes \tilde{q}_1^{*}$ となる。
+* $r_1$から$r_2$に回転させるクォータニオン $dq$ は $\tilde{q}_2\otimes \tilde{q}_1^{\ast}$ となる。
 * (1) より、左から $\tilde{q_1}^{-1}$をかけて、右から $\tilde{q_1}$ を書けると
 $
 \begin{align}
-  \tilde{q_1}^{*} \otimes r_1 \otimes \tilde{q_1} =  r_0  \\
+  \tilde{q_1}^{\ast} \otimes r_1 \otimes \tilde{q_1} =  r_0  \\
 \end{align}
 $
 * (2) に代入して $r_0$ を消去すると
 $
 \begin{align}
-  r_2 = \tilde{q_2} \otimes \tilde{q_1}^{*} \otimes r_1 \otimes \tilde{q_1} \otimes \tilde{q_2}^{*}
+  r_2 = \tilde{q_2} \otimes \tilde{q_1}^{\ast} \otimes r_1 \otimes \tilde{q_1} \otimes \tilde{q_2}^{\ast}
 \end{align}
 $
-* つまり、$r_1$から$r_2$に向かせるためのクォータニオンは $\tilde{q_2} \otimes \tilde{q_1}^{*}$ となる。
+* つまり、$r_1$から$r_2$に向かせるためのクォータニオンは $\tilde{q_2} \otimes \tilde{q_1}^{\ast}$ となる。
 
 ## プログラミング上での実装方法
 * Unity ではベクトル$v$、クォータニオン$\tilde{p}$ いずれに対してもクォータニオン $\tilde{q}$ を左からかけるだけでよい。
