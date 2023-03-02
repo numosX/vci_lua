@@ -47,7 +47,7 @@ $$
   (\tilde{q}\otimes\tilde{p})^{\ast} &= [(q_0 + \mathbf{q}) \otimes (p_0 + \mathbf{p})]^{\ast} \notag \\
   &= (p_0 + \mathbf{p})^{\ast} \otimes (q_0 + \mathbf{q})^{\ast} \notag \\
   &= (p_0 - \mathbf{p}) \otimes (q_0 - \mathbf{q}) \notag \\
-  &= \tilde{p}^{\ast} \otimes\ tilde{q}^{\ast} \notag 
+  &= \tilde{p}^{\ast} \otimes \tilde{q}^{\ast} \notag 
 \end{align}
 $$
 
