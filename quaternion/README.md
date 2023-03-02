@@ -93,7 +93,7 @@ $$
 
 $$
 \begin{aligned}
-  r_2 = \tilde{q_2} \otimes \tilde{q_1}^* \otimes r_1 \otimes \tilde{q_1} \otimes \tilde{q_2}^* \notag \\
+  r_2 &= \tilde{q_2} \otimes \tilde{q_1}^* \otimes r_1 \otimes \tilde{q_1} \otimes \tilde{q_2}^* \notag \\
   &=\tilde{q_12} \otimes r_0 \otimes \tilde{q_12}^* \notag\\
 \end{aligned}
 $$
