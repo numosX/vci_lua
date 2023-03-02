@@ -48,7 +48,7 @@ $$\begin{aligned}
   &= \tilde{p}^*\otimes\tilde{q}^* \notag 
 \end{aligned}$$
 ## 作用のさせ方
-  * ベクトル $v$ に対しては、$\tilde{q} \otimes v \otimes \tilde{q}^*$
+  * ベクトル $v$ に対しては、$ \tilde{q} \otimes v \otimes \tilde{q}^* $
   * Quaternion $\tilde{p}$ に対しては $\tilde{q} \otimes \tilde{p}$
 ## 回転量の差
 * 回転の基準となる方向が$r_0$であり、回転前の箱の向きを $r_1$、回転後の箱の向きを $r_2$ とする。
