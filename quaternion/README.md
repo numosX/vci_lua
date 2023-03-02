@@ -38,7 +38,7 @@ plane_obj.SetRotation(q_plane_1)
   * $\tilde{q}^{-1} = \tilde{q}^{*} / ||\tilde{q}|| = \tilde{q}^{*}$
 ## 共役
   * ベクトル部の係数の符号を反転する。
-  * $\tilde{q}^* = q_0 - \bold{q}$
+  * $\tilde{q}^* = q_0 - \mathbf{q}$
 ## 積の共役
   * 積の共役のとりかたは、並べ替えて、全部に共役をとる。
 $
