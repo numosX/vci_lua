@@ -81,8 +81,7 @@ $$
 \end{aligned}
 $$
 
-* $r_1$から$r_2$に回転させるクォータニオン $dq$ は $\tilde{q}_2\otimes \tilde{q}_1^{\ast}$ となる。
-* (1) より、左から $\tilde{q_1}^{-1}$をかけて、右から $\tilde{q_1}$ を書けると
+* $r_1$ の式に、左から $\tilde{q_1}^{-1}$をかけて、右から $\tilde{q_1}$ をかけると、
 
 $$
 \begin{aligned}
@@ -90,7 +89,7 @@ $$
 \end{aligned}
 $$
 
-* (2) に代入して $r_0$ を消去すると
+*  $r_2$の式に代入して $r_0$ を消去すると
 
 $$
 \begin{aligned}
@@ -98,8 +97,7 @@ $$
 \end{aligned}
 $$
 
-* つまり、 $ r_1 $ から $ r_2 $ に向かせるためのクォータニオンは $\tilde{q_2} \otimes \tilde{q_1}^*$ となる。
-
+* $r_1$から$r_2$に回転させるクォータニオン $dq$ は $\tilde{q}_2\otimes \tilde{q}_1^{\ast}$ となる。
 
 
 # References
