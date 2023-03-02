@@ -41,14 +41,12 @@ plane_obj.SetRotation(q_plane_1)
   * $\tilde{q}^* = q_0 - \mathbf{q}$
 ## 積の共役
   * 積の共役のとりかたは、並べ替えて、全部に共役をとる。
-$$
-\begin{aligned}
+$$\begin{aligned}
   (\tilde{q}\otimes\tilde{p})^{\ast} &= [(q_0 + \mathbf{q})\otimes(p_0 + \mathbf{p})]^{\ast} \notag \\
   &= (p_0 + \mathbf{p})^{\ast}\otimes(q_0 + \mathbf{q})^{\ast} \notag \\
   &= (p_0 - \mathbf{p})\otimes(q_0 - \mathbf{q}) \notag \\
   &= \tilde{p}^{\ast}\otimes\tilde{q}^{\ast} \notag 
-\end{aligned}
-$$
+\end{aligned}$$
 ## 作用のさせ方
   * ベクトル $v$ に対しては、$\tilde{q} \otimes v \otimes \tilde{q}^{\ast}$
   * Quaternion $\tilde{p}$ に対しては $\tilde{q} \otimes \tilde{p}$
