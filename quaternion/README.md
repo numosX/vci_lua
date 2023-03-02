@@ -61,6 +61,15 @@ $$
   \end{align}
 $$
 
+* Unity ではベクトル $ v $ 、クォータニオン $ \tilde{p} $ いずれに対してもクォータニオン $\tilde{q}$ を左からかけるだけでよい。
+```lua
+local q   = Quaternion.identity
+local p0  = Quaternion.identity
+local v0  = Vector.__new(0,0,0)
+v1 = q * v0
+p1 = q * p0
+```
+
 ## 回転量の差
 * 回転の基準となる方向を$r_0$、回転前の箱の向きを $r_1$、回転後の箱の向きを $r_2$ とする。
 * 基準の方向から各方向に向かせるためのクォータニオンをそれぞれ $\tilde{q}_1$、$\tilde{q}_2$ とする。
@@ -91,15 +100,6 @@ $$
 
 * つまり、 $ r_1 $ から $ r_2 $ に向かせるためのクォータニオンは $\tilde{q_2} \otimes \tilde{q_1}^*$ となる。
 
-## プログラミング上での実装方法
-* Unity ではベクトル $ v $ 、クォータニオン $ \tilde{p} $ いずれに対してもクォータニオン $\tilde{q}$ を左からかけるだけでよい。
-```lua
-local q   = Quaternion.identity
-local p0  = Quaternion.identity
-local v0  = Vector.__new(0,0,0)
-v1 = q * v0
-p1 = q * p0
-```
 
 
 # References
