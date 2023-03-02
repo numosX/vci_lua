@@ -81,7 +81,7 @@ $$
 \end{aligned}
 $$
 
-*  $ r_1$から $ r_2 $ に回転させるクォータニオン $dq$ は $\tilde{q}_2\otimes \tilde{q}_1^{\ast}$ となる。
+* $r_1$から$r_2$に回転させるクォータニオン $dq$ は $\tilde{q}_2\otimes \tilde{q}_1^{\ast}$ となる。
 * (1) より、左から $\tilde{q_1}^{-1}$をかけて、右から $\tilde{q_1}$ を書けると
 
 $$
