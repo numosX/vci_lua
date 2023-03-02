@@ -12,7 +12,7 @@ dr_vec      = plane_obj.GetPosition() - box_obj.GetPosition()
 q_box_0     = box_obj.GetRotation()
 q_plane_0   = plane_obj.GetRotation()
 ```
-* 箱の回転量と変位量を用いて板の座標および向きを更新する。
+* 箱の回転量の変化分と変位量を用いて板の座標および向きを更新する。
 ```lua
 r_box_1     = box_obj.GetPosition()
 q_box_1     = box_obj.GetRotation()
@@ -26,7 +26,10 @@ plane_obj.SetPosition(r_plane_1)
 plane_obj.SetRotation(q_plane_1)
 ```
 
-# 詳説
+# 絵を用いた説明
+* 動画アップロード中
+
+# 数式を用いた説明
 ## Quaternion
   * ある方向を基準とする回転量があり、Quaternion $\tilde{q}$ で表現できる。
   * Quaternion はスカラー部とベクトル部を分けて表記すると考えやすい。
