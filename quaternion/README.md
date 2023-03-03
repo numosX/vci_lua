@@ -104,11 +104,11 @@ $$
 $$
 \begin{aligned}
   \underline{r}_2 &= \tilde{q_2} \otimes \tilde{q_1}^* \otimes \underline{r}_1 \otimes \tilde{q_1} \otimes \tilde{q_2}^* \notag \\
-  &=\tilde{q}_{12} \otimes \underline{r}_0 \otimes \tilde{q}_{12}^* \notag
+  &=\tilde{q}_{12} \otimes \underline{r}_0 \otimes \tilde{q}_{12}^* \notag\\
 \end{aligned}
 $$
 
-* $\underline{r}_1$ から $\underline{r}_2$ に回転させるクォータニオン $\tilde{q}_{12}$ は $\tilde{q}_2\otimes \tilde{q}_1^{\ast}$ となる。
+* $\underline{r}_1$ から $\underline{r_2}$ に回転させるクォータニオン $\tilde{q}_{12}$ は $\tilde{q}_2\otimes \tilde{q}_1^{\ast}$ となる。
 * 回転している物体を更に回転させる場合、もともとある回転量を逆回転で消してしまい、新しい回転量を与えれば良いということになる。
 
 
