@@ -103,8 +103,8 @@ $$
 
 $$
 \begin{aligned}
-  \underline{r}_2 &= \tilde{q_2} \otimes \tilde{q_1}^* \otimes \underline{r}_1 \otimes \tilde{q_1} \otimes \tilde{q_2}^* \notag \\
-  &=\tilde{q}_{12} \otimes \underline{r}_0 \otimes \tilde{q}_{12}^* \notag\\
+  \underline{r}_2 &= \tilde{q_2} \otimes \tilde{q_1}^* \otimes \underline{r_1} \otimes \tilde{q_1} \otimes \tilde{q_2}^* \notag \\
+  &=\tilde{q}_{12} \otimes \underline{r_0} \otimes \tilde{q}_{12}^* \notag\\
 \end{aligned}
 $$
 
