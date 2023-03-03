@@ -62,12 +62,12 @@ $$
 * 真面目に計算すると上記のようになるが、「p回転してq回転する」の逆回転は明らかに「q逆回転して、p逆回転する」である。
 
 ## 作用のさせ方
-* 数学的には、ベクトル $v$ に対する作用のさせ方と、Quaternion $\tilde{p}$ に対する作用のさせ方が異なる。
+* 数学的には、ベクトル $\underline{v}$ に対する作用のさせ方と、Quaternion $\tilde{p}$ に対する作用のさせ方が異なる。
 
 $$
 \begin{align}
-  v'&=\tilde{q} \otimes v \otimes \tilde{q}^{\ast}  \notag\\
-  q'&=\tilde{q} \otimes \tilde{p}　\notag
+  \underline{v}'&=\tilde{q} \otimes \underline{v} \otimes \tilde{q}^{\ast}  \notag\\
+  \tilde{q}'&=\tilde{q} \otimes \tilde{p}　\notag
   \end{align}
 $$
 
@@ -81,34 +81,34 @@ p1 = q * p0
 ```
 
 ## 回転量の差
-* 回転の基準となる方向を $r_0$、回転前の箱の向きを $r_1$、回転後の箱の向きを $r_2$ とする。
+* 回転の基準となる方向を $\underline{r}_0$、回転前の箱の向きを $\underline{r}_1$、回転後の箱の向きを $\underline{r}_2$ とする。
 * 基準の方向から各方向に向かせるためのクォータニオンをそれぞれ $\tilde{q}_1, \tilde{q}_2$ とする。
 
 $$
 \begin{aligned}
-  r_1 = \tilde{q_1} \otimes r_0 \otimes \tilde{q_1}^* \notag\\
-  r_2 = \tilde{q_2} \otimes r_0 \otimes \tilde{q_2}^* \notag\\
+  \underline{r}_1 = \tilde{q_1} \otimes \underline{r}_0 \otimes \tilde{q_1}^* \notag\\
+  \underline{r}_2 = \tilde{q_2} \otimes \underline{r}_0 \otimes \tilde{q_2}^* \notag\\
 \end{aligned}
 $$
 
-* $r_1$ の式に、左から $\tilde{q_1}^{-1}$をかけて、右から $\tilde{q_1}$ をかけると、
+* $\underline{r}_1$ の式に、左から $\tilde{q_1}^{-1}$をかけて、右から $\tilde{q_1}$ をかけると、
 
 $$
 \begin{aligned}
-  \tilde{q_1}^* \otimes r_1 \otimes \tilde{q_1} =  r_0 \notag \\
+  \tilde{q_1}^* \otimes \underline{r}_1 \otimes \tilde{q_1} =  \underline{r}_0 \notag \\
 \end{aligned}
 $$
 
-*  $r_2$の式に代入して $r_0$ を消去すると
+*  $\underline{r}_2$の式に代入して $\underline{r}_0$ を消去すると
 
 $$
 \begin{aligned}
-  r_2 &= \tilde{q_2} \otimes \tilde{q_1}^* \otimes r_1 \otimes \tilde{q_1} \otimes \tilde{q_2}^* \notag \\
-  &=\tilde{q}_{12} \otimes r_0 \otimes \tilde{q}_{12}^* \notag\\
+  \underline{r}_2 &= \tilde{q_2} \otimes \tilde{q_1}^* \otimes \underline{r}_1 \otimes \tilde{q_1} \otimes \tilde{q_2}^* \notag \\
+  &=\tilde{q}_{12} \otimes \underline{r}_0 \otimes \tilde{q}_{12}^* \notag\\
 \end{aligned}
 $$
 
-* $r_1$から $r_2$に回転させるクォータニオン $\tilde{q}_{12}$ は $\tilde{q}_2\otimes \tilde{q}_1^{\ast}$ となる。
+* $\underline{r}_1$から $\underline{r}_2$に回転させるクォータニオン $\tilde{q}_{12}$ は $\tilde{q}_2\otimes \tilde{q}_1^{\ast}$ となる。
 * 回転している物体を更に回転させる場合、もともとある回転量を逆回転で消してしまい、新しい回転量を与えれば良いということになる。
 
 
