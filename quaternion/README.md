@@ -81,21 +81,21 @@ p1 = q * p0
 ```
 
 ## 回転量の差
-* 回転の基準となる方向を $\underline{r}_0$、回転前の箱の向きを $\underline{r}_1$、回転後の箱の向きを $\underline{r}_2$ とする。
-* 基準の方向から各方向に向かせるためのクォータニオンをそれぞれ $\tilde{q}_1, \tilde{q}_2$ とする。
+* 回転の基準となる方向を $\underline{r_0}$、回転前の箱の向きを $\underline{r_1}$、回転後の箱の向きを $\underline{r_2}$ とする。
+* 基準の方向から各方向に向かせるためのクォータニオンをそれぞれ $\tilde{q_1}, \tilde{q_2}$ とする。
 
 $$
 \begin{aligned}
-  \underline{r}_1 = \tilde{q_1} \otimes \underline{r}_0 \otimes \tilde{q_1}^* \notag\\
-  \underline{r}_2 = \tilde{q_2} \otimes \underline{r}_0 \otimes \tilde{q_2}^* \notag\\
+  \underline{r_1} = \tilde{q_1} \otimes \underline{r_0} \otimes \tilde{q_1}^* \notag\\
+  \underline{r_2} = \tilde{q_2} \otimes \underline{r_0} \otimes \tilde{q_2}^* \notag\\
 \end{aligned}
 $$
 
-* $\underline{r}_1$ の式に、左から $\tilde{q_1}^{-1}$をかけて、右から $\tilde{q_1}$ をかけると、
+* $\underline{r_1}$ の式に、左から $\tilde{q_1}^{-1}$をかけて、右から $\tilde{q_1}$ をかけると、
 
 $$
 \begin{aligned}
-  \tilde{q_1}^* \otimes \underline{r}_1 \otimes \tilde{q_1} =  \underline{r}_0 \notag \\
+  \tilde{q_1}^* \otimes \underline{r_1} \otimes \tilde{q_1} =  \underline{r_0} \notag \\
 \end{aligned}
 $$
 
