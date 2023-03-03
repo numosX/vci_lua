@@ -33,9 +33,9 @@ plane_obj.SetRotation(q_plane_1)
 ## Quaternion
   * ある方向を基準とする回転量があり、それを Quaternion $\tilde{q}$ で表現する。
   * Quaternion はスカラー部とベクトル部を分けて表記すると考えやすい。
-  * $\tilde{q} = q_0 + \mathbf{q}$ と表現する
+  * $\tilde{q} = q_0 + \underline{q}$ と表現する
     * スカラー部 $q_0$
-    * ベクトル部 $\mathbf{q} = q_1 \mathbf{i} + q_1 \mathbf{j} + q_1 \mathbf{k}$
+    * ベクトル部 $\underline{q} = q_1 \underline{i} + q_1 \underline{j} + q_1 \underline{k}$
 
 ##  逆Quarternion（Inverse）
   * ノルムが1となるように定義することで、逆方向の回転は共役をとるだけとなる。
@@ -43,7 +43,7 @@ plane_obj.SetRotation(q_plane_1)
 
 ## 共役
   * ベクトル部の係数の符号を反転する。
-  * $\tilde{q}^{\ast} = q_0 - \mathbf{q}$
+  * $\tilde{q}^{\ast} = q_0 - \underline{q}$
   * 上の逆Quaternionの定義から、共役をとるとは逆回転させる量に変換すると読み替えられる。
   * アスタリスクが分かりにくかったら、逆回転をあらわす -1 と読み替えてもらって良い。
 
@@ -52,9 +52,9 @@ plane_obj.SetRotation(q_plane_1)
 
 $$
 \begin{align}
-  (\tilde{q}\otimes\tilde{p})^{\ast} &= [(q_0 + \mathbf{q}) \otimes (p_0 + \mathbf{p})]^{\ast} \notag \\
-  &= (p_0 + \mathbf{p})^{\ast} \otimes (q_0 + \mathbf{q})^{\ast} \notag \\
-  &= (p_0 - \mathbf{p}) \otimes (q_0 - \mathbf{q}) \notag \\
+  (\tilde{q}\otimes\tilde{p})^{\ast} &= [(q_0 + \underline{q}) \otimes (p_0 + \underline{p})]^{\ast} \notag \\
+  &= (p_0 + \underline{p})^{\ast} \otimes (q_0 + \underline{q})^{\ast} \notag \\
+  &= (p_0 - \underline{p}) \otimes (q_0 - \underline{q}) \notag \\
   &= \tilde{p}^{\ast} \otimes \tilde{q}^{\ast} \notag 
 \end{align}
 $$
