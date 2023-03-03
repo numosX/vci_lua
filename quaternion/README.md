@@ -108,7 +108,7 @@ $$
 \end{aligned}
 $$
 
-* $\underline{r}_1$ から $\underline{r}_2$に回転させるクォータニオン $\tilde{q}_{12}$ は $\tilde{q}_2\otimes \tilde{q}_1^{\ast}$ となる。
+* $\underline{r}_1$ から $\underline{r}_2$ に回転させるクォータニオン $\tilde{q}_{12}$ は $\tilde{q}_2\otimes \tilde{q}_1^{\ast}$ となる。
 * 回転している物体を更に回転させる場合、もともとある回転量を逆回転で消してしまい、新しい回転量を与えれば良いということになる。
 
 
