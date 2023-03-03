@@ -31,17 +31,22 @@ plane_obj.SetRotation(q_plane_1)
 
 # 数式を用いた説明
 ## Quaternion
-  * ある方向を基準とする回転量があり、Quaternion $\tilde{q}$ で表現できる。
+  * ある方向を基準とする回転量があり、それを Quaternion $\tilde{q}$ で表現する。
   * Quaternion はスカラー部とベクトル部を分けて表記すると考えやすい。
   * $\tilde{q} = q_0 + \mathbf{q}$ と表現する
     * スカラー部 $q_0$
     * ベクトル部 $\mathbf{q} = q_1 \mathbf{i} + q_1 \mathbf{j} + q_1 \mathbf{k}$
+
 ##  逆Quarternion（Inverse）
   * ノルムが1となるように定義することで、逆方向の回転は共役をとるだけとなる。
   * $\tilde{q}^{-1} = \tilde{q}^* / ||\tilde{q}|| = \tilde{q}^{\ast}$
+
 ## 共役
   * ベクトル部の係数の符号を反転する。
   * $\tilde{q}^{\ast} = q_0 - \mathbf{q}$
+  * 上の逆Quaternionの定義から、共役をとるとは逆回転させる量に変換すると読み替えられる。
+  * アスタリスクが分かりにくかったら、逆回転をあらわす -1 と読み替えてもらって良い。
+
 ## 積の共役
   * 積の共役のとりかたは、並べ替えて、全部に共役をとる。
 
@@ -54,15 +59,15 @@ $$
 \end{align}
 $$
 
-* 真面目に数式を書くと上記のようになるが、「p回転してq回転する」の逆は「q逆回転して、p逆回転する」である。
+* 真面目に計算すると上記のようになるが、「p回転してq回転する」の逆回転は明らかに「q逆回転して、p逆回転する」である。
 
 ## 作用のさせ方
 * 数学的には、ベクトル $v$ に対する作用のさせ方と、Quaternion $\tilde{p}$ に対する作用のさせ方が異なる。
 
 $$
 \begin{align}
-  v'&=\tilde{q} \otimes v \otimes \tilde{q}^{\ast}  \\
-  q'&=\tilde{q} \otimes \tilde{p}
+  v'&=\tilde{q} \otimes v \otimes \tilde{q}^{\ast}  \notag\\
+  q'&=\tilde{q} \otimes \tilde{p}　\notag
   \end{align}
 $$
 
@@ -70,7 +75,7 @@ $$
 ```lua
 local q   = Quaternion.identity
 local p0  = Quaternion.identity
-local v0  = Vector.__new(0,0,0)
+local v0  = Vector3.__new(0,0,0)
 v1 = q * v0
 p1 = q * p0
 ```
@@ -104,7 +109,7 @@ $$
 $$
 
 * $r_1$から $r_2$に回転させるクォータニオン $\tilde{q}_{12}$ は $\tilde{q}_2\otimes \tilde{q}_1^{\ast}$ となる。
-* 幾何学的にこれを考えると、回転している物体を更に回転させる場合、元の回転をある基準に戻してから新しい回転量を与えれば良いということになる。
+* 回転している物体を更に回転させる場合、もともとある回転量を逆回転で消してしまい、新しい回転量を与えれば良いということになる。
 
 
 # References
