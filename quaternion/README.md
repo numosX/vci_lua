@@ -35,7 +35,7 @@ plane_obj.SetRotation(q_plane_1)
   * Quaternion はスカラー部とベクトル部を分けて表記すると考えやすい。
   * $\tilde{q} = q_0 + \underline{q}$ と表現する
     * スカラー部 $q_0$
-    * ベクトル部 $\underline{q} = q_1 \underline{i} + q_1 \underline{j} + q_1 \underline{k}$
+    * ベクトル部 $\underline{q} = q_1 \underline{i} + q_2 \underline{j} + q_3 \underline{k}$
 
 ##  逆Quarternion（Inverse）
   * ノルムが1となるように定義することで、逆方向の回転は共役をとるだけとなる。
@@ -99,7 +99,7 @@ $$
 \end{aligned}
 $$
 
-*  $\underline{r_2}$の式に代入して $\underline{r_0}$ を消去すると
+* $\underline{r_2}$の式に代入して $\underline{r_0}$ を消去すると
 
 $$
 \begin{aligned}
