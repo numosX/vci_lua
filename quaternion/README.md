@@ -105,7 +105,7 @@ $$
 $$
 \begin{aligned}
   \underline{r}_2 &= \tilde{q_2} \otimes \tilde{q_1}^* \otimes \underline{r_1} \otimes \tilde{q_1} \otimes \tilde{q_2}^* \notag \\
-  &=\tilde{q}_{12} \otimes \underline{r_1} \otimes \tilde{q}_{12}^* \notag\\
+  &=\tilde{q_{12}} \otimes \underline{r_1} \otimes \tilde{q_{12}}^* \notag\\
 \end{aligned}
 $$
 
