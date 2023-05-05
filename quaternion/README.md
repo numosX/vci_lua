@@ -27,7 +27,7 @@ plane_obj.SetRotation(q_plane_1)
 ```
 
 # 絵を用いた説明
-* 動画アップロード中
+* [数式不要、絵でわかるクォータニオンの使い方](https://youtu.be/Q1CQK6SxKJw)
 
 # 数式を用いた説明
 ## Quaternion
