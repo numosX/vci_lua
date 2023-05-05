@@ -99,7 +99,7 @@ $$
 \end{aligned}
 $$
 
-* $\underline{r_2}$の式に代入して $\underline{r_0}$ を消去すると
+* $\underline{r_2}$ の式に代入して、$\underline{r_0}$ を消去すると
 
 $$
 \begin{aligned}
