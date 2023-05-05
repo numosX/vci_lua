@@ -101,6 +101,7 @@ $$
 
 * $\underline{r_2}$ の式に代入して、 $\underline{r_0}$を消去すると
 
+
 $$
 \begin{aligned}
   \underline{r}_2 &= \tilde{q_2} \otimes \tilde{q_1}^* \otimes \underline{r_1} \otimes \tilde{q_1} \otimes \tilde{q_2}^* \notag \\
