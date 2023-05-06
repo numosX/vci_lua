@@ -111,7 +111,7 @@ $$
 
 $$
 \begin{aligned}
-  \underline{r}_{2} &= \tilde{q}_{12} \otimes \underline{r}_1 \otimes \tilde{q}_{12}^{\ast} \notag\\
+  \underline{r}_{2} = \tilde{q}_{12} \otimes \underline{r}_1 \otimes \tilde{q}_{12}^{\ast} \notag\\
 \end{aligned}
 $$
 
