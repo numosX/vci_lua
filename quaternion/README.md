@@ -107,11 +107,11 @@ $$
 \end{aligned}
 $$
 
-* クォータニオンの積を一つの塊にすると
+* ここで、$\tilde{q}_{12} = \tilde{q}_2\otimes \tilde{q}_1^{\ast}$ として、クォータニオンの積を一つの塊として見ると
 
 $$
 \begin{aligned}
-  \tilde{{q}_{12}}
+  \underline{r}_2 = \tilde{q}_{12} \otimes \underline{r}_1 \otimes \tilde{q}_{12}^{\ast} \notag\\
 \end{aligned}
 $$
 
