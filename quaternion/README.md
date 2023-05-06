@@ -106,11 +106,11 @@ $$
   \underline{r}_2 = \tilde{q_2} \otimes \tilde{q_1}^{\ast} \otimes \underline{r_1} \otimes \tilde{q_1} \otimes \tilde{q_2}^{\ast} \notag 
 \end{aligned}
 $$
-
+クォータニオンの積を一つの塊とみなすと、
 $$
 \begin{aligned}
 \\
-  \underline{r}_2 =\tilde{q_{12}} \otimes \underline{r_1} \otimes \tilde{q_{12}}^{\ast} \notag\\
+  \underline{r_{2}} =\tilde{q_{12}} \otimes \underline{r_1} \otimes \tilde{q_{12}}^{\ast} \notag\\
 \end{aligned}
 $$
 
