@@ -108,7 +108,6 @@ $$
 $$
 $$
 \begin{aligned}
-\\
   \underline{r}_2 =\tilde{q_12} \otimes \underline{r_1} \otimes \tilde{q_12}^{\ast} \notag\\
 \end{aligned}
 $$
