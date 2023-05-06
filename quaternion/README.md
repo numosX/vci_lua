@@ -108,6 +108,7 @@ $$
 $$
 
 * クォータニオンの積を一つの塊にすると
+
 $$
 \begin{aligned}
   \underline{r}_2 & =\tilde{{q}_{12}} \otimes \underline{r_1} \otimes \tilde{{q}_{12}}^{\ast} \notag\\
