@@ -104,7 +104,13 @@ $$
 $$
 \begin{aligned}
   \underline{r}_2 &= \tilde{q_2} \otimes \tilde{q_1}^{\ast} \otimes \underline{r_1} \otimes \tilde{q_1} \otimes \tilde{q_2}^{\ast} \notag \\
-  \underline{r}_2 & =\tilde{{q}_{12}} \otimes \underline{r_1} \otimes \tilde{{q}_{12}} \notag\\
+\end{aligned}
+$$
+
+* クォータニオンの積を一つの塊にすると
+$$
+\begin{aligned}
+  \underline{r}_2 & =\tilde{{q}_{12}} \otimes \underline{r_1} \otimes \tilde{{q}_{12}}^{\ast} \notag\\
 \end{aligned}
 $$
 
