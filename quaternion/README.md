@@ -111,7 +111,7 @@ $$
 
 $$
 \begin{aligned}
-  \tilde{q}_{12}
+  \tilde{{q}_{12}}
 \end{aligned}
 $$
 $$
