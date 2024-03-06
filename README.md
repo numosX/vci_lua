@@ -1,4 +1,4 @@
-# VCI Utils
+# VCI Memo
 * Lua scripts for Virtual Cast
 
 |class|memo|
