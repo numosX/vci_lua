@@ -113,7 +113,7 @@ $$ \underline{r}_2 = \tilde{q_2} \otimes \tilde{q_1}^{\ast} \otimes \underline{r
 
 $$ \underline{r_2} = \tilde{q_{12}} \otimes \underline{r_1} \otimes \tilde{q_{12}}^{\ast} $$
 
-* 両辺を比較すると
+* ２式を比較すると
 
 $$ \tilde{q}_{12} = \tilde{q}_2 \otimes \tilde{q}_1^{\ast} $$
 
