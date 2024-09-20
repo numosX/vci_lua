@@ -60,6 +60,12 @@ $$
 $$
 
 * 真面目に計算すると上記のようになるが、「p回転してq回転する」の逆回転は明らかに「q逆回転して、p逆回転する」である。
+* では下記ではどうだろうか？
+
+$$ (\tilde{w}\otimes\tilde{v}\otimes\tilde{u}\otimes\tilde{t}\otimes\tilde{s}\otimes\tilde{r}\otimes\tilde{q}\otimes\tilde{p})^{\ast} = ? $$
+
+* 数式でしか考えられないのなら、解くのは大変だ。
+* 我々は既に物理的なイメージを持っているので、即答できるだろう。
 
 ## 作用のさせ方
 * 数学的には、ベクトル $\underline{v}$ に対する作用のさせ方と、Quaternion $\tilde{p}$ に対する作用のさせ方が異なる。
@@ -101,16 +107,17 @@ $$
 
 * $\underline{r_2}$ の式に代入して、 $\underline{r_0}$を消去すると、
 
-$$
-\begin{aligned}
-  \underline{r}_2 &= \tilde{q_2} \otimes \tilde{q_1}^{\ast} \otimes \underline{r_1} \otimes \tilde{q_1} \otimes \tilde{q_2}^{\ast} \notag \\
-                  &= \tilde{q_{12}} \otimes \underline{r_1} \otimes \tilde{q}_{12}^{\ast} \notag \\
-\end{aligned}
-$$
+$$ \underline{r}_2 = \tilde{q_2} \otimes \tilde{q_1}^{\ast} \otimes \underline{r_1} \otimes \tilde{q_1} \otimes \tilde{q_2}^{\ast} $$
 
-* $\underline{r_1}$ から $\underline{r_2}$ に回転させるクォータニオン $\tilde{q}_{12}$ は $\tilde{q}_2\otimes \tilde{q}_1^{\ast}$ となる。
+* $\underline{r_1}$ から $\underline{r_2}$ に回転させるクォータニオン $\tilde{q}_{12}$ をとすると
 
-* 回転している物体を更に回転させる場合、もともとある回転量を逆回転で消してしまい、新しい回転量を与えれば良いということになる。
+$$ \underline{r_2} = \tilde{q_{12}} \otimes \underline{r_1} \otimes \tilde{q_{12}}^{\ast} $$
+
+* 両辺を比較すると
+
+$$ \tilde{q}_{12} = \tilde{q}_2 \otimes \tilde{q}_1^{\ast} $$
+
+と書ける。よって、回転している物体を更に回転させる場合、もともとある回転量を逆回転で消してしまい、新しい回転量を与えれば良いということになる。
 
 
 # References
