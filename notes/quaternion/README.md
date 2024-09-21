@@ -109,15 +109,15 @@ $$
 \end{aligned}
 $$
 
-* $\underline{r_2}$ の式に代入して、 $\underline{r_0}$を消去すると、
+* $\underline{r_2}$ の式に代入して、 $\underline{r_0}$を消去すると、次の式が得られる。
 
 $$ \underline{r}_2 = \tilde{q_2} \otimes \tilde{q_1}^{\ast} \otimes \underline{r_1} \otimes \tilde{q_1} \otimes \tilde{q_2}^{\ast} $$
 
-* $\underline{r_1}$ から $\underline{r_2}$ に回転させるクォータニオン $\tilde{q}_{12}$ をとすると
+* 一方、$\underline{r_1}$ から $\underline{r_2}$ に回転させるクォータニオン $\tilde{q}_{12}$ をとすると、下記の様に表現することもできる。
 
 $$ \underline{r_2} = \tilde{q_{12}} \otimes \underline{r_1} \otimes \tilde{q_{12}}^{\ast} $$
 
-* ２式を比較すると、次のように書ける。
+* 2式を比較すると、次のように書ける。
 
 $$ \tilde{q}_{12} = \tilde{q}_2 \otimes \tilde{q}_1^{\ast} $$
 
