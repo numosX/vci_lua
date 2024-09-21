@@ -113,7 +113,7 @@ $$
 
 $$ \underline{r}_2 = \tilde{q_2} \otimes \tilde{q_1}^{\ast} \otimes \underline{r_1} \otimes \tilde{q_1} \otimes \tilde{q_2}^{\ast} $$
 
-* 一方、$\underline{r_1}$ から $\underline{r_2}$ に回転させるクォータニオン $\tilde{q}_{12}$ をとすると、下記の様に表現することもできる。
+* 一方、 $\underline{r_1}$ から $\underline{r_2}$ に回転させるクォータニオン $\tilde{q}_{12}$ をとすると、下記の様に表現することもできる。
 
 $$ \underline{r_2} = \tilde{q_{12}} \otimes \underline{r_1} \otimes \tilde{q_{12}}^{\ast} $$
 
