@@ -74,25 +74,6 @@ $$ (\tilde{w}\otimes\tilde{v}\otimes\tilde{u}\otimes\tilde{t}\otimes\tilde{s}\ot
 * もちろん、答えは「wで逆回転して、vで逆回転して、...、pで逆回転する」である。
 * 作用させる前後でイメージを持つ、その時間発展を絵として見る。これらは数式の気持ちを理解するのに必要な事だ。
 
-## 作用のさせ方
-* 数学的には、ベクトル $\underline{v}$ に対する作用のさせ方と、Quaternion $\tilde{p}$ に対する作用のさせ方が異なる。
-
-$$
-\begin{align}
-  \underline{v}'&=\tilde{q} \otimes \underline{v} \otimes \tilde{q}^{\ast}  \notag\\
-  \tilde{q}'&=\tilde{q} \otimes \tilde{p}　\notag
-  \end{align}
-$$
-
-* Unity では、いずれに対してもクォータニオン $\tilde{q}$ を左からかけるだけでよい。
-```lua
-local q   = Quaternion.identity
-local p0  = Quaternion.identity
-local v0  = Vector3.__new(0,0,0)
-v1 = q * v0
-p1 = q * p0
-```
-
 ## 回転量の差
 * 回転の基準となる方向を $\underline{r_0}$、回転前の箱の向きを $\underline{r_1}$、回転後の箱の向きを $\underline{r_2}$ とする。
 * 以下では、 $\underline{r_1}$ から $\underline{r_2}$ に回転させるクォータニオンを求める。
@@ -126,10 +107,28 @@ $$ \underline{r_2} = \tilde{q_{12}} \otimes \underline{r_1} \otimes \tilde{q_{12
 $$ \tilde{q}_{12} = \tilde{q}_2 \otimes \tilde{q}_1^{\ast} $$
 
 * よって、回転している物体を更に回転させる場合、もともとある回転量を逆回転で消してしまい、新しい回転量を与えれば良いということになる。
+* 冒頭のサンプルコードでは、箱のオブジェクト座標系における回転量をこの方法で求め、その回転量を板のオブジェクト座標系に反映している。
 
-## Unity での扱い
-* Unity では、右から複素共役を掛ける事を省略することができる（内部では計算している）。
+## 作用のさせ方
+* 数学的には、ベクトル $\underline{v}$ に対する作用のさせ方と、Quaternion $\tilde{p}$ に対する作用のさせ方が異なる。
+
+$$
+\begin{align}
+  \underline{v}'&=\tilde{q} \otimes \underline{v} \otimes \tilde{q}^{\ast}  \notag\\
+  \tilde{q}'&=\tilde{q} \otimes \tilde{p}　\notag
+  \end{align}
+$$
+
+* Unity では、いずれに対してもクォータニオン $\tilde{q}$ を左からかけるだけでよい。
+  * 右から複素共役を掛ける事を省略することができる（内部では計算している）。
 * これにより、縦ベクトルに回転行列を作用させるときの様に、見かけ上は左からクォータニオンを掛けていけばよいだけとなる。
+```lua
+local q   = Quaternion.identity
+local p0  = Quaternion.identity
+local v0  = Vector3.__new(0,0,0)
+v1 = q * v0
+p1 = q * p0
+```
 
 ## あとがき
 
